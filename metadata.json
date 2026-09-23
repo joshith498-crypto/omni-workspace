@@ -1,0 +1,6 @@
+{
+  "name": "OmniWorkspace - Cross-Platform AI Productivity Hub",
+  "description": "All-in-one AI productivity hub and smart media workspace featuring voice dictation, smart notes, instant AI summarization, semantic media retrieval, and Kanban task board.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

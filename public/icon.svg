@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#6366f1" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Base Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="512" height="512" rx="128" fill="none" stroke="#6366f1" stroke-opacity="0.3" stroke-width="6"/>
+
+  <!-- Radial Glow behind emblem -->
+  <circle cx="256" cy="256" r="160" fill="url(#glowGrad)" filter="blur(20px)"/>
+
+  <!-- Omni Core Symbol (Intersecting dynamic rings / AI Workspace nodes) -->
+  <g filter="url(#shadow)">
+    <!-- Outer Hex/Ring Arc -->
+    <path d="M 256 110 C 336 110 402 176 402 256 C 402 336 336 402 256 402 C 176 402 110 336 110 256 C 110 176 176 110 256 110 Z" 
+          fill="none" stroke="url(#accentGrad)" stroke-width="28" stroke-linecap="round" stroke-dasharray="320 80"/>
+          
+    <!-- Inner geometric W / Productivity glyph -->
+    <path d="M 170 210 L 215 320 L 256 240 L 297 320 L 342 210" 
+          fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Dynamic AI Spark Core -->
+    <circle cx="256" cy="180" r="14" fill="#a855f7"/>
+    <circle cx="256" cy="180" r="24" fill="none" stroke="#c084fc" stroke-width="4" stroke-opacity="0.6"/>
+  </g>
+</svg>
